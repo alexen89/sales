@@ -19,11 +19,4 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::get('admin', function(){
-	return view('admin.dashboard');
-});
-
-Route::get('/users', 'Users@index');
+Route::get('/admin', 'AdminController@index')->name('admin.home');
