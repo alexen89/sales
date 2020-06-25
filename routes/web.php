@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('admin.home');
+
+
+Route::resource('units', 'UnitsController')->only('index', 'store');
+
+
+Route::resource('units', 'UnitsController')->only('index', 'store');

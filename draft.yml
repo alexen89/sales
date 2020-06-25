@@ -1,0 +1,16 @@
+models:
+  Unit:
+    name: string:100
+
+
+controllers:
+  Units:
+    index:
+      query: all
+      render: units.index with:units
+
+    store:
+      validate: name
+      save: unit
+      flash: unit.name
+      redirect: unit.index
