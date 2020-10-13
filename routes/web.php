@@ -26,3 +26,16 @@ Route::resource('units', 'UnitsController')->only('index', 'store');
 
 
 Route::resource('units', 'UnitsController')->only('index', 'store');
+
+
+Route::get('/sales', 'SalesController@index')->name('sales.home');
+
+Route::get('/adminproduct', 'AdminProductController@index');
+Route::get('/createProduct', 'AdminProductController@createProduct')->name('admin.product.home');
+Route::post('/productAdd', 'AdminProductController@productAdd');
+Route::post('/loadProduct', 'AdminProductController@loadProduct');
+
+
+
+Route::get('/adminsales', 'AdminSalesController@index')->name('admin.sales.home');
+

@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->bigIncrements('id_product');
             $table->string("name");
             $table->integer("quantity");
+            $table->float('amount', 8, 2);
             $table->string("url_img");
             $table->bigInteger("id_provider");
             $table->bigInteger("id_type_product");
