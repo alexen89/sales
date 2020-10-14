@@ -45,13 +45,13 @@ class AdminProductController extends Controller
 
     public function loadProduct(Request $request)
     {
-    	$request = $this->request->all();
+    	/*$request = $this->request->all();
     	$product = new ProductsModel::where('id_product' , '=' , $request['id'] )->get();
         echo '<pre>';
         print_r($product);
         echo '</pre>';
         return \Response::json(array(
                     'success' => $request['id']
-                )); 
+                )); */
     }
 }
